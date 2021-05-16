@@ -1,0 +1,65 @@
+.container1{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: center;
+    padding: 20px;
+    height: 200px;
+    width:90%;
+    
+}
+.container2{
+    
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.top{
+    background-color: ghostwhite;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.items{
+    background-color: ghostwhite;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    width:100%;
+}
+button{
+    position: absolute;
+    right: 1%;
+    top:40%;
+    height: 50px;
+}
+.items img{
+    height: 50px;
+
+}
+div{
+    text-align: center;
+}
+.top>i{
+    margin-left: 4px;
+}
+.items>div{
+    width: 100px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.banner{
+    width: 100%;
+    padding: 10px;
+}

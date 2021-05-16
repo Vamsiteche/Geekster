@@ -1,0 +1,31 @@
+
+.ggf{
+    padding:10px;
+    background-color: blanchedalmond;
+    display:block;
+}
+.gf,.father,.sib,.you{
+    display:none;
+}
+.ggf:hover .gf{
+    padding-left:30px;
+    background-color: burlywood;
+    display:block;
+}
+.gf:hover .father{
+    padding-left:60px;
+    background-color:cadetblue ;
+    display:block;
+}
+.father:hover .you{
+    padding-left:90px;
+    background-color:chartreuse ;
+    display:block;
+}
+.father:hover .sib{
+    padding-left:90px;
+    background-color:cornsilk ;
+    display:block;
+}
+
+
