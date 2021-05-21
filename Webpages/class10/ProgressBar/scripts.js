@@ -5,7 +5,7 @@ function barcal(){
     var scrolled = (winScroll / height) * 100;
     console.log(scrolled)
     bar.innerHTML=scrolled.toFixed(0)+"%"
-    bar.style.width=scrolled+"%"
+    bar.style.width=scrolled/100*94+"%"
 
     bar.style.backgroundColor="rgb(100,"+scrolled/100*255+",100)"
 
