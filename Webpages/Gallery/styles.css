@@ -18,7 +18,12 @@ body{
 
 }
 
-
+.notify{
+     background-color: rgba(0,0,0,0.5);
+     text-align: center;
+     padding: 1px 3px 1px 3px;
+     color: oldlace;
+}
 #titlebar button{
     float: right;
     padding: 15px 25px;
@@ -33,11 +38,11 @@ body{
     background-color: #cf5300;
   }
   img{
-      width:100%; 
+      width:100%;
+     
   }
   img:hover{
       transform:scale(0.98);
-      
       
   }
   .col-1 div{
@@ -56,15 +61,101 @@ body{
     box-shadow: 0 5px #907163;
     transform: translateY(4px);
   }
-  .col-1 ,.col-3{
-       width:23%;
+  @media screen and (min-width:1200px) {
+    .col-1 ,.col-3{
+        width:23%;
+        float:left;
+        margin: 5px 5px 5px 10px;
+        height: auto;
+   }
+   .col-2 {
+       width:49%;
        float:left;
-       margin: 5px 5px 5px 10px;
+       margin:5px 5px 5px 10px;
+       height: auto;
+   }
+   .col-4{
+       display: none;
+   }
+   .notify{
+    display: none;
+   }
+      
   }
-  .col-2 {
-      width:49%;
-      float:left;
-      margin:5px 5px 5px 10px;
+  @media screen and (min-width:688px) and (max-width:1199px){
+    .col-1 ,.col-3{
+        width:42%;
+        float:left;
+        margin: 5px 5px 5px 10px;
+        height: auto;
+   }
+   .col-2 {
+       display: none;
+   }
+   .col-4 {
+       display: block;
+       clear: left;
+       align-items: center;
+       width: 94%;
+       height: auto;
+   }
+   .notify{
+       display: none;
+   }
+  }
+  @media screen and  (max-width:687px) and (orientation: portrait){
+    .col-1 ,.col-3{
+        width:90%;
+        margin: 5px 5px 5px 10px;
+        height: auto;
+   }
+   .col-2 {
+       display: none;
+   }
+   .col-4 {
+       display: none;
+   }
+   .titlebar button{
+       position: fixed;
+       right:0px;
+       top:5px;
+       height: auto;
+   }
+   .notify{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right:50%-250px;
+    padding:1px 5px 1px 5px;
+   
+   }
+  }
+  @media screen and  (max-width:687px) and (orientation: landscape){
+    .col-1 ,.col-3{
+       display: none;
+   }
+   .col-2 {
+       display: block;
+       width:auto;
+       height:80%;
+       margin: 5px 5px 5px 10px;
+   }
+   .col-4 {
+       display: none;
+   }
+   .titlebar button{
+       position: fixed;
+       right:0px;
+       top:5px;
+   }
+   .notify{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right:50%-250px;
+    padding:1px 5px 1px 5px;
+    
+}
   }
 
  footer{
@@ -72,4 +163,5 @@ body{
      background-image:linear-gradient(to bottom right,rgb(241, 198, 250),rgb(156, 238, 24));
      border-radius: 5px;
      padding:30px;
- }  
+ }
+ 
